@@ -4,6 +4,7 @@
 	$mysqluse_s = 0; 
 	$phplibraryuse_s = 1; 
 	$gzipcompress_s = 1;
+	$turnofferror_s = 1;
 
 // Configuration
 $q = "'";
@@ -28,5 +29,8 @@ $background_p_fin = "https://www.wallpapereast.com/static/images/6840652-pattern
 	}
 	if ($gzipcompress_s == 1){
 		if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start('ob_gzhandler'); else ob_start(); 	
+	}
+	if ($turnofferror_s == 1){
+		error_reporting(0);	
 	}
 ?>
