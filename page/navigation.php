@@ -18,6 +18,20 @@ include_once "/home/s3568988/public_html/setting/config.php";
         <li><a href="#">Page 2</a></li> 
         <li><a href="#">Page 3</a></li> 
       </ul>
+      
+      <!-- search bar -->
+      <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    
+    <!-- login, sign up -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="<?php echo $url_s."page/mainpage/register/"?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
