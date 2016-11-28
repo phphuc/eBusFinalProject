@@ -1,3 +1,13 @@
+Main Webpage:
+
+Team Member ID and Contact:
+
+
+
+
+Demo Of each member in team:
+
+
 ***********************************************************************
 ****************This website template made by NeV3RmI******************
 ***********************************************************************
@@ -15,12 +25,10 @@ Notice this template use [mysqli] not [mysql]
 3/ Enable
 
 JS
-
 + Bootstrap
 + Jquery
 
 PHP
-+ 
 + Connect MySQL
 + All link to one
 
