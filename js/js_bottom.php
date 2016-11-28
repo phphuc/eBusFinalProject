@@ -6,3 +6,6 @@ include_once "/home/s3568988/public_html/setting/config.php";
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Rating Star -->
+<script src="https://raw.githubusercontent.com/kartik-v/bootstrap-star-rating/master/js/star-rating.min.js"></script>
