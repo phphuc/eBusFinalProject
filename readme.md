@@ -1,7 +1,9 @@
 Main Webpage:
 
 Team Member ID and Contact:
-
+- Pham Hoang Phuc: s3575984 - 01639544926
+- To Quang Khai: s3568988 - 01674977780
+- Nguyen Huu Tai: s3500271 
 
 
 
@@ -36,3 +38,14 @@ Other Feature
 + GZIP Compression
 + .htaccess
 + .htpasswd
+
+
+4/WBS 
+
+Week 7: Database, register(continue), list page 
+
+Week 8: Login, restaurant page
+
+Week 9: SEO, filter
+
+Week 10: Shopping cart
