@@ -5,6 +5,7 @@
 	$phplibraryuse_s = 1; 
 	$gzipcompress_s = 1;
 	$turnofferror_s = 1;
+	$usesession_s = 1;
 
 // Configuration
 $q = "'";
@@ -32,5 +33,8 @@ $background_p_fin = "https://www.wallpapereast.com/static/images/6840652-pattern
 	}
 	if ($turnofferror_s == 1){
 		error_reporting(0);	
+	}
+	if ($usesession_s == 1){
+		session_start();
 	}
 ?>
