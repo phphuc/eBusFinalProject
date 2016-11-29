@@ -37,12 +37,14 @@ echo "Pass";
 
 // Insert to DB
 
+//bo vao db o day may dua xem cach insert
+
 /*if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(``,``,``) VALUES ('".$email."', '".md5($password)."')")){
 	echo mysqli_error($connect5);	
 }*/
-/*if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(`C_Email`,`C_Password`,`C_name`, 'C_DOB', 'C_Phone_no', 'C_Address') VALUES ('".$email."', '".md5($password)."', '".$name."','".$dob."', '".$phone."', '".$address."')")){
+if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(`C_Email`,`C_Password`,`C_name`, 'C_DOB', 'C_Phone_no', 'C_Address') VALUES ('".$email."', '".md5($password)."', '".$name."','".$dob."', '".$phone."', '".$address."')")){
 	echo mysqli_error($connect5);	
-}*/
+}
 
 
 ?>
