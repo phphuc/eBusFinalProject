@@ -15,6 +15,10 @@ include_once "/home/s3568988/public_html/setting/config.php";
       <input type="password" class="form-control" id="pwd" name="pwd">
     </div>
     <div class="form-group">
+      <label for="repwd">Re-type password:</label>
+      <input type="password" class="form-control" id="repwd" name="repwd">
+    </div>
+    <div class="form-group">
       <label for="Cname">Full Name:</label>
       <input type="text" class="form-control" id="Cname" name="Cname">
     </div>
