@@ -1,10 +1,15 @@
 <?php
 include_once "/home/s3568988/public_html/setting/config.php";
+include_once "/home/s3568988/public_html/setting/mysql_config.php";
 ?>
 <?php
 $email = $_POST["email"];
 $password = $_POST["pwd"];
 $rePassword = $_POST["repwd"];
+$Cname = $_POST["Cname"];
+$dob = $_POST["dob"];
+$phone = $_POST["phone"];
+$address = $_POST["address"];
 
 // Do Regex o day
 // Mail Check
@@ -32,8 +37,12 @@ echo "Pass";
 
 // Insert to DB
 
-/*if (!$insertToDB = mysqli_query($connect5, "INSERT INTO ``(``,``,``) VALUES ('".$email."', '".md5($password)."')")){
+/*if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(``,``,``) VALUES ('".$email."', '".md5($password)."')")){
 	echo mysqli_error($connect5);	
 }*/
+if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(`C_Email`,`C_Password`,`C_name`, 'C_DOB', 'C_Phone_no', 'C_Address') VALUES ('".$email."', '".md5($password)."', '".$name."','".$dob."', '".$phone."', '".$address."')")){
+	echo mysqli_error($connect5);	
+}
+
 
 ?>
