@@ -15,14 +15,28 @@ include_once "/home/s3568988/public_html/setting/config.php";
       <input type="password" class="form-control" id="pwd" name="pwd">
     </div>
     <div class="form-group">
-      <label for="pwd">Retype Password:</label>
-      <input type="password" class="form-control" id="pwd" name="repwd">
+      <label for="Cname">Full Name:</label>
+      <input type="text" class="form-control" id="Cname" name="Cname">
     </div>
+    <div class="form-group">
+      <label for="dob">Date of birth:</label>
+      <input type="date" class="form-control" id="dob" name="dob">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone number:</label>
+      <input type="number" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" class="form-control" id="address" name="address">
+    </div>
+    <!-- check box remember me
     <div class="checkbox">
       <label>
         <input type="checkbox">
         Remember me</label>
     </div>
+    -->
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
