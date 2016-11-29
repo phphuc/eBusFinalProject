@@ -45,7 +45,6 @@ if (!regexCheck($regexMail,$email)){
 if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer` (`C_Email`,`C_Password`,`C_name`, `C_DOB`, `C_Phone_no`, `C_Address`) VALUES ('".$email."', '".md5($password)."', '".$Cname."','".$dob."', '".$phone."', '".$address."')")){
 	echo mysqli_error($connect5);	
 }  else {
-
 echo "You are successfully signed up<br>";
 header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/');
 }

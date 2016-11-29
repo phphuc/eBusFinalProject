@@ -28,7 +28,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
     </div>
     <div class="form-group">
       <label for="phone">Phone number:</label>
-      <input type="number" class="form-control" id="phone" name="phone">
+      <input type="text" class="form-control" id="phone" name="phone">
     </div>
     <div class="form-group">
       <label for="address">Address:</label>
