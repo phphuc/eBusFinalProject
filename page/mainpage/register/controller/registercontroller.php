@@ -26,14 +26,15 @@ if (!regexCheck($regexMail,$email)){
 	exit();
 }
 
-if (!regexCheck($regexPassword,$password)){
+/*if (!regexCheck($regexPassword,$password)){
 	echo "After finish delete this echo: In BUILD <br>";
 	echo "Please correct the password field form!";
 	header('Refresh: 3;url=../index.php');
 	exit();
-}
+}*/
 
-echo "Pass";
+echo "You are successfully signed up<br>";
+header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/');
 
 // Insert to DB
 
@@ -42,7 +43,7 @@ echo "Pass";
 /*if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(``,``,``) VALUES ('".$email."', '".md5($password)."')")){
 	echo mysqli_error($connect5);	
 }*/
-if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer`(`C_Email`,`C_Password`,`C_name`, `C_DOB`, `C_Phone_no`, `C_Address`) VALUES ('".$email."', '".md5($password)."', '".$name."','".$dob."', '".$phone."', '".$address."')")){
+if (!$insertToDB = mysqli_query($connect5, "INSERT INTO `customer` (`C_Email`,`C_Password`,`C_name`, `C_DOB`, `C_Phone_no`, `C_Address`) VALUES ('".$email."', '".md5($password)."', '".$Cname."','".$dob."', '".$phone."', '".$address."')")){
 	echo mysqli_error($connect5);	
 }
 
