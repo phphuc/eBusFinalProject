@@ -9,7 +9,7 @@ include_once $phppath_s."page/mainpage/index/meta.php";
 include_once $phppath_s."css/css.php";
 include_once $phppath_s."js/js_top.php";
 ?>
-<title>Homepage | <?php echo $title_s?></title>
+<title>Homepage | <?php echo $i7umnry e6iik7epl0/itle_s?></title>
 </head>
 
 <body>
