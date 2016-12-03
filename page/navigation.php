@@ -9,7 +9,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="<?php echo $url_s."index.php"?>">WebSiteName</a>
+      <a class="navbar-brand" href="<?php echo $url_s."index.php"?>"><?php echo $sitename_s ?></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -33,10 +33,20 @@ include_once "/home/s3568988/public_html/setting/config.php";
     
    
     <!-- login, sign up -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo $url_s."page/mainpage/register/"?>"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
-        <li><a href="<?php echo $url_s."page/mainpage/login/"?>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+    <?php 
+	if (!empty($_SESSION['id'])){
+		echo '<ul class="nav navbar-nav navbar-right">
+        <li><a href="'.$url_s.'page/mainpage/userpage/"><span class="glyphicon glyphicon-user"></span> Welcome '.$_SESSION['email'].'!</a></li>
+      </ul>';
+	}else{
+		echo '<ul class="nav navbar-nav navbar-right">
+        <li><a href="'.$url_s.'page/mainpage/register/"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        <li><a href="'.$url_s.'page/mainpage/login/"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+      </ul>';	
+	}
+	?>
+    
+      
     </div>
   </div>
 </nav>

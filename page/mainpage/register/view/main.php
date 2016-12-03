@@ -2,6 +2,8 @@
 include_once "/home/s3568988/public_html/setting/config.php";
 ?>
 
+
+
 <div class="container">
   <h1>Register</h1>
   <form class="col-md-6 col-md-offset-3 col-sm-12 col-lg-4 col-lg-offset-4" action="<?php echo $url_s."page/mainpage/register/controller/registercontroller.php"?>" method="post">
@@ -41,6 +43,6 @@ include_once "/home/s3568988/public_html/setting/config.php";
         Remember me</label>
     </div>
     -->
-    <button type="submit" class="btn btn-default" >Submit</button>
+    <button type="submit" class="btn btn-default"  >Submit</button>
   </form>
 </div>

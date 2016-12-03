@@ -5,6 +5,10 @@ include_once "/home/s3568988/public_html/setting/config.php";
 function regexCheck($regexPattern, $string){
 	return (preg_match($regexPattern,$string)?true:false);
 }
+
+function redirectURL ($redirectInSecond, $toURL){
+	return header( "refresh:".$redirectInSecond.";url=".$toURL."" );	
+}
 ?>
 <?php
 //Regex Library
