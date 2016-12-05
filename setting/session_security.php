@@ -1,7 +1,7 @@
 <?php
 include_once "/home/s3568988/public_html/setting/config.php";
 ?>
-
+<?php
 // Get Page Id
 $page[] = "";
 $getPage = mysqli_query($connect5,"SELECT * FROM `Pages` WHERE `PageName` = '".basename($_SERVER['PHP_SELF'])."'");
@@ -30,14 +30,14 @@ if ($countUser == 1){
 	echo "You don't have permission to view this page.";
 }
 
-
+/*
 $userId = $_SESSION['id'] or 0;
 $groupId = $_SESSION['groupId'] or 0;
 $pageId = $page[0];
 $isSuperUser = set variable;
-$permissionId = set variable or 0;
-
-function CheckPermissionFor($userId, $groupId, $pageId, $isSuperUser, $permissionId){
+$permissionName = set variable(read,write) or 0;
+*/
+function IfThisUserCan($permissionName, $userId, $groupId, $pageId, $isSuperUser){
 	if (/* Match All */){
 		return true;
 	}
@@ -120,3 +120,4 @@ UserId == 0 && GroupId == 0 && IsSuperUser == 1
 
 
 */
+?>
