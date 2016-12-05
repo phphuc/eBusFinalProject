@@ -3,15 +3,14 @@ include_once "/home/s3568988/public_html/setting/config.php";
 ?>
 <?php
 // Get Page Id
-$page[] = "";
-$getPage = mysqli_query($connect5,"SELECT * FROM `Pages` WHERE `PageName` = '".basename($_SERVER['PHP_SELF'])."'");
+$getPage = mysqli_query($connect5,"SELECT * FROM `Pages` WHERE `PageURL` = '".$urlc_s."'");
 if (mysqli_num_rows($getPage) == 1){
 while($r = mysqli_fetch_array($getPage)){
 	$pageId = $r['Page_Id'];
 }
 }else{
-	echo "Please contact ADMINISTRATOR to verify page before continue";
-	exit();
+	$pageId = "Cannot get page Id";
+	debugToConsole($pageId);
 }
 
 // Get User permission
@@ -63,6 +62,7 @@ Permission
 
 Page
 `PageId`
+`PageURL`
 
 
 
@@ -108,7 +108,9 @@ UserId == 0 && GroupId == 0 && IsSuperUser == 1
 
 
 
+///// Notice
 
+Need to check full URL
 
 
 

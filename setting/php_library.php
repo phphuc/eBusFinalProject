@@ -9,6 +9,15 @@ function regexCheck($regexPattern, $string){
 function redirectURL ($redirectInSecond, $toURL){
 	return header( "refresh:".$redirectInSecond.";url=".$toURL."" );	
 }
+function debugToConsole( $data ) {
+// IN Test
+    if ( is_array( $data ) )
+        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+    else
+        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+    //echo $output;
+}
 ?>
 <?php
 //Regex Library
