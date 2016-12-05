@@ -47,15 +47,37 @@ Page
 `UserId` 
 `GroupId`
 `PageId`
-`PerId` 
+`PerId`
+`IsSuperUser` 
 `ActPAvailable`
 
 Game Rules:
 
-UserId == 0 && GroupId == 0 => Everyone can do the acction PerId for PageId
-UserId == 0 && GroupId == n => Only People in group have permisison can do the acction PerId for PageId
-UserId == n && GroupId == 0 => Only that person can do the action in PerId for PageId
-UserId == n && GroupId == n => This person in group can set this type of permission to the other people in group
+UserId == 0 && GroupId == 0 && IsSuperUser == 0 
+=> Everyone can do the acction PerId for PageId
+
+UserId == 0 && GroupId == n && IsSuperUser == 0 
+=> Only People in group have permisison can do the acction PerId for PageId
+
+UserId == n && GroupId == 0 && IsSuperUser == 0 
+=> Only that person can do the action in PerId for PageId
+
+UserId == n && GroupId == n && IsSuperUser == 0 
+=> This person in group can set this type of permission to the other people in group
+
+// Can Set permission to another
+
+UserId == n && GroupId == n && IsSuperUser == 1 
+=> This person can set this type of permission to all people in this page
+
+UserId == 0 && GroupId == n && IsSuperUser == 1 
+=> This group can set this type of permission to all another people in this page
+
+UserId == n && GroupId == 0 && IsSuperUser == 1
+=> This person can set permission to all another people in this site
+
+UserId == 0 && GroupId == 0 && IsSuperUser == 1
+=> This page doesn't have permission to do and in develop
 
 
 
