@@ -52,8 +52,11 @@ Page
 
 Game Rules:
 
-UserId == 0 && GroupId == 0 => Everyone can do it
-UserId == 0
+UserId == 0 && GroupId == 0 => Everyone can do the acction PerId for PageId
+UserId == 0 && GroupId == n => Only People in group have permisison can do the acction PerId for PageId
+UserId == n && GroupId == 0 => Only that person can do the action in PerId for PageId
+UserId == n && GroupId == n => This person in group can set this type of permission to the other people in group
+
 
 
 
