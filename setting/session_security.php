@@ -31,6 +31,20 @@ if ($countUser == 1){
 }
 
 
+$userId = $_SESSION['id'] or 0;
+$groupId = $_SESSION['groupId'] or 0;
+$pageId = $page[0];
+$isSuperUser = set variable;
+$permissionId = set variable or 0;
+
+function CheckPermissionFor($userId, $groupId, $pageId, $isSuperUser, $permissionId){
+	if (/* Match All */){
+		return true;
+	}
+	return false;
+}
+
+
 /*
 4 main table
 
@@ -43,6 +57,7 @@ User
 
 Permission
 `PermissionId`
+	=> 0 => All
 `PermissionName`
 	=> Edit, Update, Delete, etc
 
@@ -89,7 +104,7 @@ UserId == n && GroupId == 0 && IsSuperUser == 1
 => This person can set permission to all another people in this site
 
 UserId == 0 && GroupId == 0 && IsSuperUser == 1
-=> This page doesn't have permission to do and in develop
+=> This page doesn't have permission to do or in develop
 
 
 
