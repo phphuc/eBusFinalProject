@@ -35,9 +35,21 @@ if ($countUser == 1){
 4 main table
 
 Group
+`GroupId`
+
+
 User
+`UserId`
+
 Permission
+`PermissionId`
+`PermissionName`
+	=> Edit, Update, Delete, etc
+
 Page
+`PageId`
+
+
 
 1 Join Table
 
@@ -47,7 +59,7 @@ Page
 `UserId` 
 `GroupId`
 `PageId`
-`PerId`
+`PermissionId`
 `IsSuperUser` 
 `ActPAvailable`
 
