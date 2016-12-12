@@ -39,7 +39,7 @@ if ($numRowDb == 1){
 		$_SESSION['id'] = $idValid;
 		$_SESSION['email'] = $email;
 		$_SESSION['password'] = $password;
-		redirectURL(3,$url_s."/index.php");
+		header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/');
 		exit();
 	}
 	echo "Incorrect password";
