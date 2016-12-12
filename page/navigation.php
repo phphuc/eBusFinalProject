@@ -37,7 +37,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
 	if (!empty($_SESSION['id'])){
 		echo '<ul class="nav navbar-nav navbar-right">
         <li><a href="'.$url_s.'page/mainpage/userpage/"><span class="glyphicon glyphicon-user"></span> Welcome '.$_SESSION['email'].'!</a></li>
-		<li><a href="'.$url_s.'page/mainpage/login/logout.php"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
+		<li><a href="'.$url_s.'page/mainpage/login/controller/logout.php"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
       </ul>';
 	}else{
 		echo '<ul class="nav navbar-nav navbar-right">
