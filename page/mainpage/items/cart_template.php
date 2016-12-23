@@ -39,10 +39,10 @@ $ok=1;
 </div>
 <?php
 
-mysql_select_db("shop",$connect5);
+mysqli_select_db("shop",$connect5);
 $sql="select * from books order by id desc";
-$query=mysql_query($sql);
-if(mysql_num_rows($query) > 0)
+$query=mysqli_query($sql);
+if(mysqli_num_rows($query) > 0)
 {
  while($row=mysql_fetch_array($query))
  {
