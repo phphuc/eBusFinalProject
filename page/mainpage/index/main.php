@@ -92,7 +92,7 @@ if ($b > 0){
 echo $finaldisplay;	
 
 To This*/
-$numberOfItem = 1;
+$numberOfItem = 6;
 
 $display = '
 <div class="col-sm-4 col-lg-4 col-md-4">
