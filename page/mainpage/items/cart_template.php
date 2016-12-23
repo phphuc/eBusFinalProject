@@ -30,17 +30,16 @@ $ok=1;
  }
  if ($ok != 2)
   {
-  echo '<p>Ban khong co mon hang nao trong gio hang</p>';
+  echo '<p>You do not have any items in your shopping cart</p>';
  } else {
   $items = $_SESSION['cart'];
-  echo '<p>Ban dang co <a href="cart.php">'.count($items).' mon hang trong gio hang</a></p>';
+  echo '<p>You have <a href="cart.php">'.count($items).' items in your shopping cart</a></p>';
  }
 ?>
 </div>
 <?php
-$connect=mysql_connect("localhost","root","root")
-or die("Can not connect database");
-mysql_select_db("shop",$connect);
+
+mysql_select_db("shop",$connect5);
 $sql="select * from books order by id desc";
 $query=mysql_query($sql);
 if(mysql_num_rows($query) > 0)
