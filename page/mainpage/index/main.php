@@ -8,9 +8,10 @@ include_once "/home/s3568988/public_html/setting/config.php";
             <div class="col-md-3">
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
+                    <a href="#" class="list-group-item">Keyboard</a>
+                    <a href="#" class="list-group-item">Keycap</a>
+                    <a href="#" class="list-group-item">Others</a>
+                    <a href="#" class="list-group-item">About Us</a>
                 </div>
             </div>
 
