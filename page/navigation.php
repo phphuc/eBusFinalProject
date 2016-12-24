@@ -14,13 +14,13 @@ include_once "/home/s3568988/public_html/setting/config.php";
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li> 
-        <li><a href="#">Page 3</a></li> 
+        <li><a href="<?php echo $url_s ?>">Home</a></li>
+        <li><a href="#">About Us</a></li> 
+        <!--<li><a href="#">Page 3</a></li>--> 
       </ul>
       
       <!-- search bar -->
-      <form class="navbar-form navbar-left">
+      <form class="navbar-form " style="position:absolute; left:40%;">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search">
         <div class="input-group-btn">
