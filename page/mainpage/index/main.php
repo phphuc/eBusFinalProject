@@ -9,7 +9,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Keyboard</a>
-                    <a href="#" class="list-group-item">Keycap</a>
+                    <a href="<?php echo $url_s."page/mainpage/item/cart_template.php"?>" class="list-group-item">Keycap</a>
                     <a href="#" class="list-group-item">Others</a>
                     <a href="#" class="list-group-item">About Us</a>
                 </div>

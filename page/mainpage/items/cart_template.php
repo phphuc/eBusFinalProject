@@ -126,7 +126,7 @@
   <div class="panel-footer"><p class="item_price">$ 348</p> 
     <form method="post" action="?do=add" >
   <input type="submit" class='btn btn-danger btn-md item_add' value="ADD" >
-  <label>Qty: <input class="item_Quantity form-control" type="text"  name="quantity" value="1"></label>
+  <label>Qty: <input clas	s="item_Quantity form-control" type="text"  name="quantity" value="1"></label>
       <input type="hidden" name="item_number" value="3">
     <input type="hidden" name="item_name" value="jacket">  
          <input type="hidden" name="item_price" value="38">    
