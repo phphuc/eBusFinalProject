@@ -50,7 +50,7 @@
 				while($item = mysqli_fetch_array($cart_data)){
 					
 				 ?>
-                <tr> <th scope="row"><?=$n?></th> <td><?=$item['item_name']?></td> <td><?=$item['quantity']?></td> <td><?=$item['price']?>$</td> <td><a href="submit_order.php?do=delete&id=<?=$item['id']?>"><span class="btn btn-danger" >remove </span></a>   <a href="submit_order.php?do=add_one&id=<?=$item['id']?>"><span class="btn btn-success" >+ </span></a> <a href="submit_order.php?do=remove_one&id=<?=$item['id']?>"><span class="btn btn-warning" >- </span></a>  </td> </tr>
+                <tr> <th scope="row"><?=$n?></th> <td><?=$item['I_Name']?></td> <td><?=$item['Qty']?></td> <td><?=$item['Total_Price']?>$</td> <td><a href="submit_order.php?do=delete&id=<?=$item['I_ID']?>"><span class="btn btn-danger" >remove </span></a>   <a href="submit_order.php?do=add_one&id=<?=$item['I_ID']?>"><span class="btn btn-success" >+ </span></a> <a href="submit_order.php?do=remove_one&id=<?=$item['I_ID']?>"><span class="btn btn-warning" >- </span></a>  </td> </tr>
                 <?php
 				$n++;
 				$total +=$item['price'];
@@ -80,9 +80,9 @@
   
     <div class="col-md-3 simpleCart_shelfItem">   
 <div class="panel panel-default">
-     <div class="panel-heading item_name">T shirt </div>
+     <div class="panel-heading item_name">Key cap </div>
   <div class="panel-body">
- <img src="img/t-shirt.jpg" class="img-thumbnail img-responsive item_thumb"><br> 
+ <img src="img/keycap/1976.jpg" width="243" class="img-thumbnail img-responsive item_thumb"><br> 
      <p class='input-sm clearfix'>Description of the product </p><span class='row'></span>
   </div>
   <div class="panel-footer"> <p class="item_price">$ 88</p>
@@ -92,7 +92,7 @@
   
       <label>Qty: <input class="item_Quantity form-control" type="text"  name="quantity" value="1"></label>
     <input type="hidden" name="item_number" value="1">
-    <input type="hidden" name="item_name" value="Tshirt">
+    <input type="hidden" name="item_name" value="KeyCap">
      <input type="hidden" name="item_price" value="88">  
     </form>  
      </div>

@@ -74,7 +74,7 @@
                 <tr> <th scope="row">Name</td> <td><input type="text"  name="ship_name" placeholder="name"></td>  </tr>
                 <tr> <th scope="row">Email</td> <td><input type="email"  name="email" placeholder="email"></td>  </tr>
                 <tr> <th scope="row">Phone</td> <td><input type="text"  name="phone" placeholder="phone"></td>  </tr>
-                <tr> <th scope="row">State</td> <td><input type="text"  name="ship_state" placeholder="ship_state"></td>  </tr>
+                <!--<tr> <th scope="row">State</td> <td><input type="text"  name="ship_state" placeholder="ship_state"></td>  </tr>-->
                 <tr> <th scope="row">City</td> <td><input type="text"  name="ship_city" placeholder="ship_city"></td>  </tr>
                 <tr> <th scope="row">Street</td> <td><input type="text"  name="ship_street" placeholder="ship_street"></td>  </tr>
               </tbody> 

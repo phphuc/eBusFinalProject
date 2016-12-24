@@ -8,13 +8,13 @@ if(isset($_POST['save_order'])){
 		$ship_name = mysql_real_escape_string($_POST['ship_name']);
 		$email = mysql_real_escape_string($_POST['email']);
 		$phone = mysql_real_escape_string($_POST['phone']);
-		$ship_state = mysql_real_escape_string($_POST['ship_state']);
+		//$ship_state = mysql_real_escape_string($_POST['ship_state']);
 		$ship_city = mysql_real_escape_string($_POST['ship_city']);
 		$ship_street = mysql_real_escape_string($_POST['ship_street']);
 												
 			
 		$order_id = mysql_real_escape_string($_SESSION['order_id']) ;
-		$sql_get_save_order = "UPDATE orders set ship_name='$ship_name',email='$email',phone='$phone',ship_state='$ship_state',ship_city='$ship_city',ship_street='$ship_street' where id = $order_id ";
+		$sql_get_save_order = "INSERT INTO `order` (`ship_name`,`email`,`phone`,`ship_city`,`ship_street`) VALUE ('".$ship_name."','".$email."' ,'".$phone."','".$ship_city."','".$ship_street."')";
 		$save_order = mysqli_query($connection,$sql_get_save_order)or die(mysqli_error($connection));
 		if($save_order){
 			print_r($_SESSION);
