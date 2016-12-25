@@ -8,7 +8,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
 include_once $phppath_s."page/mainpage/index/meta.php";
 include_once $phppath_s."css/css.php";
 include_once $phppath_s."js/js_top.php";
-include_once $phppath_s."js/js_bottom.php";
+
 ?>
 <title>Homepage | <?php echo $title_s?></title>
 </head>
