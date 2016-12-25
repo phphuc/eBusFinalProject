@@ -29,13 +29,13 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/filco3.jpg" alt="" style="height:300px">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keycap/carbon2.jpg" alt="" style="height:300px">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/others/zealio3.jpg" alt="" style="height:300px">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -52,24 +52,24 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
                 <div class="row">
 <?php
 // SQL Select Item
-/* From This 
-$a = mysqli_query($connect5, "SELECT * FROM cc");
+// From This 
+$a = mysqli_query($connect5, "SELECT * FROM item");
 $b = mysqli_num_rows($a);
 if ($b > 0){
 	while ($c = mysqli_fetch_array($a)){
-		$vl[0] = $a['Column GI do'];
-		$vl[1] = $a['Column GI do'];
-		$vl[2] = $a['Column GI do'];
+		$vl[0] = $a['I_Name'];
+		$vl[1] = $a['I_Price'];
+		$vl[2] = $a['I_Img'];
 		$vl[3] = $a['Column GI do'];
 		
 		$thisdisplay = '<div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
+                            <img src="'.$vl[2].'" alt="">
                             <div class="caption">
-                                <h4 class="pull-right">'.$vl[0].'</h4>
-                                <h4><a href="#">First Product</a>
+                                <h4 class="pull-right">'.$vl[1].'</h4>
+                                <h4><a href="#">'.$vl[0].'</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com '.$vl[1].'</a>.</p>
+                                
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p>
@@ -93,8 +93,10 @@ if ($b > 0){
 
 echo $finaldisplay;	
 
-To This*/
-$numberOfItem = 1;
+//To This
+
+/*
+$numberOfItem = 6;
 
 $display = '
 <div class="col-sm-4 col-lg-4 col-md-4">
@@ -104,7 +106,7 @@ $display = '
                                 <h4 class="pull-right">$24.99</h4>
                                 <h4><a href="#">First Product</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com '.$vl[1].'</a>.</p>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p>
@@ -125,7 +127,7 @@ $display = '
 for($x = 0; $x < $numberOfItem; $x++){
 echo $display; 	
 }
-
+*/
 
 ?>
                     
