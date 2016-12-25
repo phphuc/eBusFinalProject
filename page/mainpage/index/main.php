@@ -46,7 +46,10 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
                     </div>
 
                 </div>
-
+                  <p>&nbsp;</p>
+                  <p><br />
+                  </p>
+                  <hr />
                 <div id="itemShow">
 					<?php
 						foreach ($items as $item){
