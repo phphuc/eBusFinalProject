@@ -1,10 +1,10 @@
 <?php include_once "/home/s3568988/public_html/setting/config.php"; ?>
 <?php
 // SQL Select Item
-$connectDb = mysqli_query($connect5, "SELECT * FROM item");
+$getItemFromDb = mysqli_query($connect5, "SELECT * FROM item");
 $items = array();
-if (mysqli_num_rows(connectDB) > 0){
-	while($row = mysql_fetch_assoc($items))
+if (mysqli_num_rows($getItemFromDb) > 0){
+	while($row = mysqli_fetch_assoc($items))
 	{
 		$items[] = $row;
 	}

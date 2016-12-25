@@ -1,7 +1,7 @@
 <?php
 include_once "/home/s3568988/public_html/setting/config.php";
 
-include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemController.php"
+include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemController.php";
 ?>	
 
 <div class="container">
