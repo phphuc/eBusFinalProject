@@ -55,8 +55,8 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 									<div class="thumbnail">
 										<img src="'.$item['I_Img'].'" alt="">
 										<div class="caption">
-										   <h4 class="pull-right">'.$value['I_Price'].'</h4>
-											<h4><a href="#">'.$value['I_Name'].'</a>
+										   <h4 class="pull-right">'.$item['I_Price'].'</h4>
+											<h4><a href="#">'.$item['I_Name'].'</a>
 											</h4>
 
 										</div>
@@ -74,7 +74,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 								</div>
 							';
 						}
-						unset(items);
+		
 					?>
                 </div>
 

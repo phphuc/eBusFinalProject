@@ -4,10 +4,11 @@
 $getItemFromDb = mysqli_query($connect5, "SELECT * FROM item");
 $items = array();
 if (mysqli_num_rows($getItemFromDb) > 0){
-	while($row = mysqli_fetch_assoc($items))
+	while($row = mysqli_fetch_assoc($getItemFromDb))
 	{
 		$items[] = $row;
 	}
+
 }
 /*
 $itemrow = mysqli_num_rows($connectDB);

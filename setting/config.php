@@ -4,7 +4,7 @@
 	$mysqluse_s = 1; 
 	$phplibraryuse_s = 1; 
 	$gzipcompress_s = 1;
-	$turnofferror_s = 1;
+	$turnofferror_s = 0;
 	$usesession_s = 1;
 
 // Configuration
