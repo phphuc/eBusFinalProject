@@ -82,5 +82,5 @@ for($x = 0; $x < $numberOfItem; $x++){
 echo $display; 	
 }*/
 
-
+// For send
 ?>
