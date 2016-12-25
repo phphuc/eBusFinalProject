@@ -34,9 +34,9 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
                                 <div class="item">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/gon2.jpg" alt="" width="800" height="300">
                                 </div>
-                                <div class="item"></div>
+                                <div class="item">
                             		<img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keycap/1976.jpg" alt="" width="800" height="300">
-                                    </div>
+                                 </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
