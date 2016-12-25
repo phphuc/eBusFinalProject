@@ -66,7 +66,7 @@ if ($itemrow > 0){
                         <div class="thumbnail">
                             <img src="'.$value[2].'" alt="">
                             <div class="caption">
-                               <h4 class="pull-right">'.$value[1].'</h4>
+               	                <h4 class="pull-right">'.$value[1].'</h4>
                                 <h4><a href="#">'.$value[0].'</a>
                                 </h4>
                                 
