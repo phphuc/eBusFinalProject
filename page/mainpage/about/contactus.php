@@ -50,7 +50,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
       google.maps.event.addDomListener(window, 'load', init_map);
  
     </script>
-    
+    	</div>
  <!--
 	
 <script>
@@ -65,7 +65,7 @@ function myMap() {
 ​
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 	-->
-       </div>
+       
        
     </div>
 </div>
