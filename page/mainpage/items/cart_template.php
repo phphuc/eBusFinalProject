@@ -82,7 +82,7 @@
 <div class="panel panel-default">
      <div class="panel-heading item_name">Key cap </div>
   <div class="panel-body">
- <img src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/1976.jpg" width="243" class="img-thumbnail img-responsive item_thumb"><br> 
+ <img src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keycap/1976.jpg" width="243" class="img-thumbnail img-responsive item_thumb"><br> 
      <p class='input-sm clearfix'>Description of the product </p><span class='row'></span>
   </div>
   <div class="panel-footer"> <p class="item_price">$ 88</p>
