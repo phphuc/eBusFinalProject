@@ -28,13 +28,13 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="item active">
+                                <div class="item active" style="width:800px;height:300px">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/weaven3.jpg" alt="" width="800" height="300">
                                 </div>
-                                <div class="item">
+                                <div class="item" style="width:800px;height:300px">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/gon2.jpg" alt="" width="800" height="300">
                                 </div>
-                                <div class="item">
+                                <div class="item" style="width:800px;height:300px">
                             		<img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keycap/1976.jpg" alt="" width="800" height="300">
                                  </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -49,6 +49,7 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
                 </div>
 
                 <div class="row">
+<br />                
 <?php
 // SQL Select Item
 /* From This 
@@ -127,7 +128,7 @@ echo $display;
 
 
 ?>
-                    
+ <br />                   
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <h4><a href="#">Like this template?</a>
