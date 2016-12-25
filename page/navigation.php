@@ -13,9 +13,9 @@ include_once "/home/s3568988/public_html/setting/config.php";
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="<?php echo $url_s ?>">Home</a></li>
-        <li><a href="#">About Us</a></li> 
+        <li class="active"><a href="mekong1.rmit.edu.vn/~s3568988">Home</a></li>
+        
+        <li><a href="<?php echo $url_s."page/mainpage/about/contactus.php" ?>">About Us</a></li> 
         <!--<li><a href="#">Page 3</a></li>--> 
       </ul>
       

@@ -1,5 +1,6 @@
 <?php
 include_once "/home/s3568988/public_html/setting/config.php";
+include_once "/home/s3568988/public_html/setting/mysql_config.php";
 ?>
 
 <div class="container">
@@ -11,7 +12,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
                     <a href="#" class="list-group-item">Keyboard</a>
                     <a href="<?php echo $url_s."page/mainpage/item/cart_template.php"?>" class="list-group-item">Keycap</a>
                     <a href="#" class="list-group-item">Others</a>
-                    <a href="#" class="list-group-item">About Us</a>
+                    
                 </div>
             </div>
 
