@@ -24,7 +24,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
        </div>
        
        <div id="map-container" class="col-md-6">
-       	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>	
+      <!-- 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>	
 			<script>	
  
       function init_map() {
@@ -51,7 +51,8 @@ include_once "/home/s3568988/public_html/setting/config.php";
  
     </script>
     	</div>
- <!--
+        -->
+ 
 	
 <script>
 function myMap() {
@@ -64,7 +65,7 @@ function myMap() {
 </script>
 ​
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-	-->
+	
        
        
     </div>
