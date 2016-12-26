@@ -89,4 +89,31 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
         </div>
 
 </div>
+
 <!-- Just For Send -->
+
+
+<!-- Modal -->
+  <div class="modal fade" id="showItem" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo $item['I_Name'] ?></h4>
+        </div>
+        <div class="modal-body">
+          <div style="max-width:600px;max-height:400px;margin: 0 auto;">
+          		<img class="img-responsive" src="'.$item['I_Img'].'"/>
+          </div>
+          <div>
+          	<p><?php echo $item['I_Description'] ?></p>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
