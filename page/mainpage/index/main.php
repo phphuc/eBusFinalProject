@@ -28,7 +28,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 </ol>
                             <div class="carousel-inner">
                                 <div class="item active" style="width:800px;height:300px">
-                                    <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/weaven3.jpg" alt="" width="800" height="300">
+                                    <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/weaven3.jpg" alt="" width="100%" height="100%" style="">
                                 </div>
                                 <div class="item" style="width:800px;height:300px">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/gon2.jpg" alt="" width="800" height="300">
