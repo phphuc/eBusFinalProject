@@ -11,7 +11,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
                     <a href="#" class="list-group-item">Keyboard</a>
-                    <a href="<?php echo $url_s."page/mainpage/item/cart_template.php"?>" class="list-group-item">Keycap</a>
+                    <a href="<?php echo $url_s."page/mainpage/items/cart_template.php"?>" class="list-group-item">Keycap</a>
                     <a href="#" class="list-group-item">Others</a>
                     
                 </div>
