@@ -55,15 +55,15 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 						foreach ($items as $item){
 							echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
-									<div class="thumbnail">
+									<div class="thumbnail" style="width:250px;height:300px">
 										<img src="'.$item['I_Img'].'" alt="" width="200px" height="100px">
 										<div class="caption">
-										   <h4 class="pull-right">'.$item['I_Price'].'</h4>
+										   <h4 class="pull-right col-md-6 col-sm-6 col-xs-6">'.$item['I_Price'].'</h4>
 											<h4><a href="#">'.$item['I_Name'].'</a>
 											</h4>
 
 										</div>
-										<div class="ratings">
+										<!--<div class="ratings">
 											<p class="pull-right">15 reviews</p>
 											<p>
 												<span class="glyphicon glyphicon-star"></span>
@@ -72,7 +72,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 												<span class="glyphicon glyphicon-star"></span>
 												<span class="glyphicon glyphicon-star"></span>
 											</p>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							';
