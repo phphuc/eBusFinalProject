@@ -56,7 +56,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 							echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail">
-										<img src="'.$item['I_Img'].'" alt="">
+										<img src="'.$item['I_Img'].'" alt="" width="200px" height="100px">
 										<div class="caption">
 										   <h4 class="pull-right">'.$item['I_Price'].'</h4>
 											<h4><a href="#">'.$item['I_Name'].'</a>
