@@ -4,7 +4,7 @@ session_start();
 include('config.php');
 
 if(isset($_GET['do'])){ // check request from page forms
-	$action = $_GET['do'];
+	$action = $_GET['do']; $connection;
 	//Array ( [quantity] => 1 [item_number] => 2 [item_name] => pant [item_price] => 38 ) Array ( [do] => add ) 
 	switch($action){
 	case"add":
