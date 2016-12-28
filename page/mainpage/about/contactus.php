@@ -23,10 +23,10 @@ include_once "/home/s3568988/public_html/setting/config.php";
            </ul>
        </div>
        
-       <div id="map-container" class="col-md-6">
+       
       <!-- 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>	
 			<script>	
- 
+ <div id="map-container" class="col-md-6">
       function init_map() {
 		var var_location = new google.maps.LatLng(10.729243,106.696035);
  
@@ -51,12 +51,18 @@ include_once "/home/s3568988/public_html/setting/config.php";
  
     </script>
     	</div>
+    
+    cach khac
+        
+ <div class="span8">
+        	<iframe width="50%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+    	</div>
         -->
- 
-	
+        
+<div id="map" style="width:100%;height:500px"></div>	
 <script>
 function myMap() {
-  var mapCanvas = document.getElementById("map-container");
+  var mapCanvas = document.getElementById("map");
   var mapOptions = {
     center: new google.maps.LatLng(10.729243,106.696035), zoom: 20
   };
