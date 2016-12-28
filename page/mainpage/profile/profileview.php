@@ -7,12 +7,12 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
 <?php
 $getUserFromDb = mysqli_query($connect5, "SELECT * FROM customer where I_ID='".$_SESSION['id']."'");
 $user = array();
-if (mysqli_num_rows($getUserFromDb) > 0){
+
 	while($row = mysqli_fetch_assoc($getUserFromDb))
 	{
 		$user[] = $row;
 	}
-}
+
 
 ?>
 
