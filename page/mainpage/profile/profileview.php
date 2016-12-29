@@ -21,7 +21,7 @@ $user = mysqli_fetch_assoc($getUserFromDb)
   
     <div class="form-group">
       <label for="email">Email address:</label>
-      <input type="email" class="form-control" id="email1" name="email1" value="<?php echo $user["C_Email"] ?>">
+      <input type="email" class="form-control" id="email1" name="email1" value="<?php echo $user["C_Email"] ?>" disabled>
     </div>
     <div class="form-group">
       <label for="Cname">Full Name:</label>

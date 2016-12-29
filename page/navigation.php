@@ -20,9 +20,9 @@ include_once "/home/s3568988/public_html/setting/config.php";
       </ul>
       
       <!-- search bar -->
-      <form class="navbar-form " style="position:absolute; left:40%;">
+      <form class="navbar-form " style="position:absolute; left:40%;" method="post" action="<?php echo $url_s."page/mainpage/search/"?>">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Search" name="search" id="search">
         <div class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <i class="glyphicon glyphicon-search"></i>
