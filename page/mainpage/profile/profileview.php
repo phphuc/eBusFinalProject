@@ -5,13 +5,11 @@ include_once "/home/s3568988/public_html/setting/mysql_config.php";
 
 
 <?php
-$getUserFromDb = mysqli_query($connect5, "SELECT * FROM customer where I_ID='".$_SESSION['id']."'");
-$user = array();
+$getUserFromDb = mysqli_query($connect5, "SELECT * FROM customer where C_ID='".$_SESSION['id']."'");
+//$user = array();
 
-	while($row = mysqli_fetch_assoc($getUserFromDb))
-	{
-		$user[] = $row;
-	}
+$user = mysqli_fetch_assoc($getUserFromDb)
+	
 
 
 ?>
