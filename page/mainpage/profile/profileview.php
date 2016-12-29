@@ -23,27 +23,27 @@ $user = array();
   
     <div class="form-group">
       <label for="email">Email address:</label>
-      <input type="email" class="form-control" id="email1" name="email1" value="<?php echo $user['C_Email'] ?>">
+      <input type="email" class="form-control" id="email1" name="email1" value="<?php echo $user["C_Email"] ?>">
     </div>
     <div class="form-group">
       <label for="Cname">Full Name:</label>
-      <input type="text" class="form-control" id="Cname1" name="Cname1" value="<?php echo $user['C_name'] ?>">
+      <input type="text" class="form-control" id="Cname1" name="Cname1" value="<?php echo $user["C_name"] ?>">
     </div>
     <div class="form-group">
       <label for="dob">Date of birth:</label>
-      <input type="date" class="form-control" id="dob1" name="dob1" value="<?php echo $user['C_DOB'] ?>">
+      <input type="date" class="form-control" id="dob1" name="dob1" value="<?php echo $user["C_DOB"] ?>">
     </div>
     <div class="form-group">
       <label for="phone">Phone number:</label>
-      <input type="text" class="form-control" id="phone1" name="phone1" value="<?php echo $user['C_Phone_no'] ?>">
+      <input type="text" class="form-control" id="phone1" name="phone1" value="<?php echo $user["C_Phone_no"] ?>">
     </div>
     <div class="form-group">
       <label for="address">Address:</label>
-      <input type="text" class="form-control" id="address1" name="address1" value="<?php echo $user['C_Address'] ?>">
+      <input type="text" class="form-control" id="address1" name="address1" value="<?php echo $user["C_Address"] ?>">
     </div>
     <button type="submit" class="btn btn-success"  >Save change</button>
     <button type="reset" class="btn btn-danger"  >Cancel</button>
     
-   
+   <?php if($connect5) {mysqli_close($connect5);} ?>
   </form>
 </div>
