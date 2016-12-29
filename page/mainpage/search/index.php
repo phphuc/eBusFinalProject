@@ -16,7 +16,14 @@ include_once $phppath_s."js/js_top.php";
 <body>
 <?php
 include_once $phppath_s."page/navigation.php";
+include_once $phppath_s."page/mainpage/search/do_search.php";
+include_once $phppath_s."page/mainpage/index/footer.php";
+include_once $phppath_s."js/js_bottom.php";
+?>
+</body>
+</html>
 
+<?php /*
 //include_once $phppath_s."page/mainpage/search/do_search.php";
 ?>
 
@@ -35,13 +42,13 @@ include_once $phppath_s."page/navigation.php";
             
             <div class="col-md-9">
 
-<?php
+<?php 
 //if we got something through $_POST
 //if (isset($_GET["search"])) {
     $word = $_POST["search"];
     /* never trust what user wrote! We must ALWAYS sanitize user input
     $word = mysqli_real_escape_string($_GET['search']);
-    $word = htmlentities($word);*/ echo $word;
+    $word = htmlentities($word); echo $word;
     // build your search query to the database
     $searchItem = mysqli_query($connect5,"SELECT I_Name FROM item WHERE I_Name LIKE '%" . $word . "%' ORDER BY I_Name");
 	$rowSearch=mysqli_num_rows($searchItem);
@@ -69,7 +76,7 @@ include_once $phppath_s."page/navigation.php";
 			$result         = $r['title'];
             // we will use this to bold the search word in result
             $bold           = '<span class="found">' . $word . '</span>';    
-            $end_result     .= '<li>' . str_ireplace($word, $bold, $result) . '</li>';  */           
+            $end_result     .= '<li>' . str_ireplace($word, $bold, $result) . '</li>';            
         }
         
 	} else {
@@ -79,11 +86,5 @@ include_once $phppath_s."page/navigation.php";
 ?>
 		</div>
 	</div>
-</div>
-
-<?php
-include_once $phppath_s."page/mainpage/index/footer.php";
-include_once $phppath_s."js/js_bottom.php";
+</div>*/
 ?>
-</body>
-</html>

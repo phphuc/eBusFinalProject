@@ -15,26 +15,29 @@ include_once "/home/s3568988/public_html/setting/config.php";
                 </div>
             </div>
             
-            <div class="col-md-9"
+            <div class="col-md-9">
 
 <?php
 //if we got something through $_POST
-//if (isset($_GET["search"])) {
+if (isset($_POST["search"])) {
     $word = $_POST["search"];
-    /* never trust what user wrote! We must ALWAYS sanitize user input
-    $word = mysqli_real_escape_string($_GET['search']);
-    $word = htmlentities($word);*/ echo $word;
+    //never trust what user wrote! We must ALWAYS sanitize user input
+    $word = mysqli_real_escape_string($connect5, $_POST['search']);
+    $word = htmlentities($word);
     // build your search query to the database
-    $searchItem = mysqli_query($connect5,"SELECT I_Name FROM item WHERE I_Name LIKE '%" . $word . "%' ORDER BY I_Name");
-	$rowSearch=mysqli_num_rows($searchItem);
+    $searchItem = mysqli_query($connect5,"SELECT * FROM item WHERE I_Name LIKE '%" . $word . "%' ORDER BY I_Name");
+	//$rowSearch=mysqli_num_rows($searchItem);
 	$result=array();
-	$result[]=mysqli_fetch_assoc($searchItem);
+	
     // get results
      
-    if(count($rowSearch)>0) {
+    if(mysqli_num_rows($searchItem)>0) {
         
-        foreach($result as $r) {
+        while ($rows=mysqli_fetch_assoc($searchItem)) {
 			
+			$result[] = $rows;	    };		
+		
+		foreach ($result as $r){
 			echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
@@ -46,18 +49,12 @@ include_once "/home/s3568988/public_html/setting/config.php";
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$r['I_Price'].'</h4>
 			</div>
 			</div>';
-			
-           /* 
-			$result         = $r['title'];
-            // we will use this to bold the search word in result
-            $bold           = '<span class="found">' . $word . '</span>';    
-            $end_result     .= '<li>' . str_ireplace($word, $bold, $result) . '</li>';  */           
-        }
-        
+        };
+		
 	} else {
-        echo '<li>No results found</li>';
+        echo '<p>No results found</p>';
     }
-
+}
 ?>
 		</div>
 	</div>
