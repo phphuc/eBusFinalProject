@@ -17,7 +17,7 @@ if(mysqli_num_rows($getItemFromDb)>0){
 			 $total += $value['quantity'];
 			 
 			 }
-		echo "<div class='alert alert-danger'>You have: $total item.</div>";	  
+		echo "<div class='alert alert-danger'>You have:<a href='list.php' style='text-decoration:underline'> $total</a> item.</div>";	  
 		 }
  while($row = mysqli_fetch_assoc($getItemFromDb)){
 	echo "<ul>";
