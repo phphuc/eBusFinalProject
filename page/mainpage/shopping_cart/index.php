@@ -16,6 +16,7 @@ include_once $phppath_s."js/js_top.php";
 <?php
 include_once $phppath_s."page/navigation.php";
 include_once $phppath_s."page/mainpage/shopping_cart/cart_template.php";
+//include_once $phppath_s."page/mainpage/shopping_cart/list.php";
 include_once $phppath_s."page/mainpage/index/footer.php";
 include_once $phppath_s."js/js_bottom.php";
 ?>

@@ -39,7 +39,7 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
 	  echo "<td>$value[I_Name]</td>";
 	  echo "<td>$value[I_Description]</td>";
 	  echo "<td>".number_format($value['I_Price'])."</td>";
-	  echo "<td><input type='text' name = '$value[I_ID] value='$value[quantity]''></input></td>";
+	  echo "<td><input type='text' name = '$value[I_ID]' value='$value[quantity]''></input></td>";
 	  echo "<td>".number_format($value['I_Price']*$value['quantity'])."</td>";
 	  echo "<td><a href='delete.php?id=$value[I_ID]' onclick='return confirm_query()'>Delete</a></td>";
 	 echo "</tr>";
@@ -47,7 +47,7 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
  
  echo "</table>";
  echo "<p style'text-align:right;width:600px'>";
- echo "<input type='submit' name='ok' value='update' onClick='return confirm_query()'>";
+ echo "<input type='submit' name='ok' value='Update' onClick='return confirm_query()'>";
  echo "</p>";
  echo "</center>";
  echo "</form>";	
