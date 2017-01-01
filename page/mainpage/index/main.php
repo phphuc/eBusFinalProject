@@ -66,7 +66,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
 										<div id="img" data-toggle="modal" data-target="#showItem" style="height:200px;width:auto">
-										<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;">
+										<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
 										</div>
 										<div class="caption">
 										   <h4><a data-toggle="modal" href="#showItem'.$item['I_ID'].'">'.$item['I_Name'].'</a></h4>
@@ -77,7 +77,12 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 											
 									</div>
 								</div>
-							<!-- Modal -->
+							';
+						}
+						
+					?>
+                    <?php foreach ($items as $item) { echo '
+					<!-- Modal -->
   <div class="modal fade" id="showItem'.$item['I_ID'].'" role="dialog">
     <div class="modal-dialog modal-lg">
     
@@ -100,13 +105,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
         </div>
       </div>
     </div>
-	 <!--End modal -->											
-
-										
-										
-							';
-						}
-						
+	 <!--End modal -->';}
 					?>
                 </div> 
 
