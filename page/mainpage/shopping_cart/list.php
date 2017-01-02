@@ -46,9 +46,10 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
 	 }
  
  echo "</table>";
- echo "<p style'text-align:right;width:600px'>";
+ echo "<div class='col-xs-12' style='height:50px';>";
  echo "<input type='submit' name='ok' value='Update' onClick='return confirm_query()'>";
- echo "</p>";
+ echo "<buton type='button' class='btn btn-default'><a href='checkout.php' style='text-decoration:none;color:black'>Place Order</a></buton>";
+ echo "</div>";
  echo "</center>";
  echo "</form>";	
 }
