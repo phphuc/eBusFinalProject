@@ -150,7 +150,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 			
        		<div class="modal-body">
           	<div style="max-width:600px;max-height:400px;margin: 0 auto;">
-          		<img class="img-responsive" src="'.$item['I_Img'].'"/>
+          		<img class="img-responsive" src="'.$item['I_Img'].'" width="auto" height="400px"/>
           	</div>
           	<div>
           		<p>'.$item['I_Description'].'</p>

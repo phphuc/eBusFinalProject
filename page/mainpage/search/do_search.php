@@ -48,6 +48,7 @@ if (isset($_POST["search"])) {
 										   <h4 data-toggle="modal" data-target="#showItem"><a href="#">'.$r['I_Name'].'</a></h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$r['I_Price'].'</h4>
 			</div>
+			</div>
 			</div>';
         };
 		
