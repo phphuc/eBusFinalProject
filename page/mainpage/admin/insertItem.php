@@ -32,6 +32,8 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
     </div>
     <div class="form-group">
       <label for="iDes">Description:</label>
-      <textarea class="form-control" rows="5" id="iDes" name="iDes">
+      <textarea class="form-control" rows="5" id="iDes" name="iDes"></textarea>
     </div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
 </form>
