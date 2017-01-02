@@ -26,7 +26,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
                 </div>
             </div>
 
-                        <div class="col-md-9">
+       <div class="col-md-9">
 
                 <div class="row carousel-holder">
 
@@ -36,25 +36,30 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 </ol>
                             <div class="carousel-inner">
+                                
                                 <div class="item active" style="width:800px;height:300px">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/weaven3.jpg" alt="" width="100%" height="100%" style="">
                                 </div>
+                                
                                 <div class="item" style="width:800px;height:300px">
                                     <img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keyboard/gon2.jpg" alt="" width="800" height="300">
                                 </div>
+                                
                                 <div class="item" style="width:800px;height:300px">
                             		<img class="slide-image" src="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/items/img/keycap/1976.jpg" alt="" width="800" height="300">
                                  </div>
+                                 
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
                             <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
-                        </div>
-                    </div>
+                        </div> <!-- carousel inner -->
+                    </div> <!-- carousel example -->
 
-                </div>
+                </div> <!-- carousel holder -->
+                  
                   <p>&nbsp;</p>
                   <p><br />
                   </p>
@@ -65,7 +70,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 							echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
-										<div id="img" data-toggle="modal" data-target="#showItem" style="height:200px;width:auto">
+										<div id="img" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'" style="height:200px;width:auto">
 										<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
 										</div>
 										<div class="caption">
@@ -81,39 +86,17 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 						}
 						
 					?>
-                    <?php foreach ($items as $item) { echo '
-					<!-- Modal -->
-  <div class="modal fade" id="showItem'.$item['I_ID'].'" role="dialog">
-    <div class="modal-dialog modal-lg">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        	<div class="modal-header">
-          			<button type="button" class="close" data-dismiss="modal">&times;</button>
-          			<h4 class="modal-title">'.$item['I_Name'].'</h4>
-        	</div>
-       <div class="modal-body">
-          	<div style="max-width:600px;max-height:400px;margin: 0 auto;">
-          		<img class="img-responsive" src="'.$item['I_Img'].'"/>
-          	</div>
-          	<div>
-          		<p>'.$item['I_Description'].'</p>
-           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-	 <!--End modal -->';}
-					?>
-                </div> 
+                  </div> <!-- itemshow -->
+                  
+                  
+                    
+                
 
-            </div>
+            </div> <!-- col-md-9 -->
 
-        </div>
+        </div>  <!-- for row-->
 
-</div>
+</div> <!-- for container-->
 
 	<!-- Modal
   <div class="modal fade" id="showItem" role="dialog">
@@ -153,3 +136,35 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 											</p>
 										</div>-->
 
+<?php foreach ($items as $item) { echo '
+					<!-- Modal -->
+  <div class="modal fade" id="showItem'.$item['I_ID'].'" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        	<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">'.$item['I_Name'].'</h4>
+        	</div>
+			
+       		<div class="modal-body">
+          	<div style="max-width:600px;max-height:400px;margin: 0 auto;">
+          		<img class="img-responsive" src="'.$item['I_Img'].'"/>
+          	</div>
+          	<div>
+          		<p>'.$item['I_Description'].'</p>
+           </div>
+        	</div>
+		
+        	<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        	</div>
+		
+      </div>
+	  </div>
+	  
+    </div>
+</div>
+	 <!--End modal -->';}
+					?>
