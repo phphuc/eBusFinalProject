@@ -70,16 +70,15 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 							echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
-										<div id="img" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'" style="height:200px;width:auto">
-										<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
+										<div id="img" style="height:200px;width:auto">
+											<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
 										</div>
 										<div class="caption">
-										   <h4><a data-toggle="modal" href="#showItem'.$item['I_ID'].'">'.$item['I_Name'].'</a></h4>
+										   <h4>
+										   	<a data-toggle="modal" href="#showItem'.$item['I_ID'].'">'.$item['I_Name'].'</a>
+											</h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$item['I_Price'].'</h4>
-										</div>	
-										
-									
-											
+										</div>		
 									</div>
 								</div>
 							';
@@ -138,9 +137,8 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 
 <?php foreach ($items as $item) { echo '
 					<!-- Modal -->
-  <div class="modal fade" id="showItem'.$item['I_ID'].'" role="dialog">
+<div class="modal fade" id="showItem'.$item['I_ID'].'" role="dialog">
     <div class="modal-dialog modal-lg">
-    
       <!-- Modal content-->
       <div class="modal-content">
         	<div class="modal-header">
@@ -149,21 +147,18 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
         	</div>
 			
        		<div class="modal-body">
-          	<div style="max-width:600px;max-height:400px;margin: 0 auto;">
-          		<img class="img-responsive" src="'.$item['I_Img'].'" width="auto" height="400px"/>
-          	</div>
-          	<div>
-          		<p>'.$item['I_Description'].'</p>
-           </div>
+          		<div>
+          			<img class="img-responsive" src="'.$item['I_Img'].'"/>
+          		</div>
+          		<div>
+          			<p>'.$item['I_Description'].'</p>
+           		</div>
         	</div>
 		
         	<div class="modal-footer">
           		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         	</div>
-		
-      </div>
 	  </div>
-	  
     </div>
 </div>
 	 <!--End modal -->';}
