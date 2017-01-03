@@ -19,6 +19,7 @@ if(mysqli_num_rows($getItemFromDb)>0){
 			 }
 		echo "<div class='alert alert-danger'>You have:<a href='list.php' style='text-decoration:underline'> $total</a> item.</div>";	  
 		 }
+		 $data = array();
  while($row = mysqli_fetch_assoc($getItemFromDb)){
 	echo "<ul>";
 	echo "<li><h3>$row[I_Name]</h3></li>";
@@ -27,19 +28,19 @@ if(mysqli_num_rows($getItemFromDb)>0){
 	echo "<li><a href='insert.php?id=$row[I_ID]' style='color:red;font-weight:bold'>Add to cart</a></li>";
 	echo "</ul>";
 	echo "<hr>"; 
-	//$data[] = $row;
+	$data[] = $row;
  }
 }
  /*echo "<pre>";
  print_r($data);
  echo "</pre>";*/
- /*$newarr = array();
+ $newarr = array();
  foreach($data as $value){
 	$newarr[$value['I_ID']] = $value;
  }
- /*echo "<pre>";
+ echo "<pre>";
  print_r($newarr);
- echo "</pre>";*/
+ echo "</pre>";
  
 ?>
 </div>

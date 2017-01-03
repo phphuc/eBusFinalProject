@@ -82,6 +82,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
                   <hr />
                 <div id="itemShow">
 					<?php
+					
 						foreach ($items as $item){
 							echo 
 								'<div class="col-sm-4 col-lg-4 col-md-4">
@@ -101,7 +102,13 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 								</div>
 							';
 						}
-						
+						$newarr = array();
+ foreach($items as $value){
+	$newarr[$value['I_ID']] = $value;
+ }
+ echo "<pre>";
+ print_r($newarr);
+ echo "</pre>";
 					?>
                   </div> <!-- itemshow -->
                   
