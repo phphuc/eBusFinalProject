@@ -2,6 +2,7 @@
 include_once "/home/s3568988/public_html/setting/config.php";
 
 include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemController.php";
+//include_once "/home/s3568988/public_html/page/mainpage/shopping_cart/insert.php";
 ?>	
 
 <div class="container">
@@ -27,6 +28,18 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
             </div>
 
        <div class="col-md-9">
+       			<?php if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
+	echo "<div class='alert alert-danger'>Nothing in cart</div>"; 
+	 }
+	 else{
+		 $total=0;
+		 foreach($_SESSION['cart'] as $value){
+			 $total += $value['quantity'];
+			 
+			 }
+		echo "<div class='alert alert-danger'>You have: $total item.</div>";	  
+		 }
+		 ?>
 
                 <div class="row carousel-holder">
 
@@ -79,6 +92,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 										   	<a data-toggle="modal" href="#showItem'.$item['I_ID'].'">'.$item['I_Name'].'</a>
 											</h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$item['I_Price'].'</h4>
+										   <h3><a href="'.$url_s.'page/mainpage/shopping_cart/insert.php?id='.$item['I_ID'].'" style="color:red;font-weight:bold">Add to cart</a></h3>
 										</div>		
 									</div>
 								</div>
@@ -164,3 +178,23 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 </div>
 	 <!--End modal -->';}
 					?>
+<?php
+/* $id = $_GET['id'];
+ if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
+	$data[$id]['quantity']=1;
+	$_SESSION['cart'][$id] = $data[$id];
+	 
+	 } else{
+     if(array_key_exists($id,$_SESSION['cart'])){
+		 $_SESSION['cart'][$id]['quantity']+=1;
+		 
+		 } else{
+		   $data[$id]['quantity']=1;
+	       $_SESSION['cart'][$id] = $data[$id];
+		   echo "<pre>";
+		   print_r($_SESSION['cart']);
+			 }
+		 } 
+header("location:index.php"); */
+
+?>

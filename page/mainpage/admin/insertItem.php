@@ -85,7 +85,7 @@ include_once $phppath_s."js/js_top.php";
 include_once $phppath_s."page/navigation.php";
 ?>
 <h1>Insert new product</h1>
-<form class="col-md-12" id="insertForm" action="<?php echo $url_s."page/mainpage/admin/insertItem.php" ?>" method="post">
+<form class="col-md-12" id="insertForm" action="<?php echo $url_s."page/mainpage/admin/index.php?insertItem" ?>" method="post">
 	<div class="form-group">
       <label for="iName">Name:</label>
       <input type="text" class="form-control" id="iName" name="iName" required>
@@ -131,8 +131,8 @@ $('#insertForm').submit(function(e){
 	if(isset($_POST['submitItem'])){
 		echo $_POST['submitItem'];
 		$iImage=$_FILES['iImg']['name'];
-		$iImageTmp=$FILES['iImg']['tmp_name'];
-		move_uploaded_file($iImageTmp,"".$url_s."page/mainpage/items/img/$iImage");
+		$iImageTmp=$_FILES['iImg']['tmp_name'];
+		move_uploaded_file($iImageTmp," ".$url_s."page/mainpage/items/img/$iImage");
 	
 		$insertToDB=mysqli_query($connect5, "insert into item ('I_Name','I_Type','I_Img','I_Price','I_Description') values ('".$_POST['iName']."','".$_POST['iType']."','".$_POST['iImg']."','".$_POST['iPrice']."','".$_POST['iDes']."')");
 		if($insertToDB) {

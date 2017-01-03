@@ -13,7 +13,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_s."index.php"?>">Home</a></li>
+        <li><a href="<?php echo $url_s."index.php"?>">Home</a></li>
         
         <li><a href="<?php echo $url_s."page/mainpage/about/" ?>">About Us</a></li> 
         <!--<li><a href="#">Page 3</a></li>--> 
@@ -38,11 +38,14 @@ include_once "/home/s3568988/public_html/setting/config.php";
 		echo '<ul class="nav navbar-nav navbar-right">
         <li><a href="'.$url_s.'page/mainpage/profile/"><span class="glyphicon glyphicon-user"></span> Welcome '.$_SESSION['email'].'!</a></li>
 		<li><a href="'.$url_s.'page/mainpage/login/controller/logout.php"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
+		<li><a href="'.$url_s.'page/mainpage/shopping_cart/list.php"><span class="glyphicon glyphicon-shopping-cart"></span>Your Cart</a></li>
       </ul>';
 	}else{
 		echo '<ul class="nav navbar-nav navbar-right">
         <li><a href="'.$url_s.'page/mainpage/register/"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
         <li><a href="'.$url_s.'page/mainpage/login/"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+		<li><a href="'.$url_s.'page/mainpage/shopping_cart/list.php"><span class="glyphicon glyphicon-shopping-cart"></span>Your Cart</a></li>
+		<li></li>
       </ul>';	
 	}
 	?>
