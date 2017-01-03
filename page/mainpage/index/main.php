@@ -106,9 +106,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
  foreach($items as $value){
 	$newarr[$value['I_ID']] = $value;
  }
- echo "<pre>";
- print_r($newarr);
- echo "</pre>";
+ 
 					?>
                   </div> <!-- itemshow -->
                   
