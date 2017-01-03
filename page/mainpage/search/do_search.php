@@ -16,6 +16,18 @@ include_once "/home/s3568988/public_html/setting/config.php";
             </div>
             
             <div class="col-md-9">
+            <?php if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
+	echo "<div class='alert alert-danger'>Nothing in cart</div>"; 
+	 }
+	 else{
+		 $total=0;
+		 foreach($_SESSION['cart'] as $value){
+			 $total += $value['quantity'];
+			 
+			 }
+		echo "<div class='alert alert-danger'>You have: $total item.</div>";	  
+		 }
+		 ?>
 
 <?php
 //if we got something through $_POST
@@ -47,6 +59,7 @@ if (isset($_POST["search"])) {
 										<div class="caption">
 										   <h4><a data-toggle="modal" href="#showItem'.$r['I_ID'].'">'.$r['I_Name'].'</a></h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$r['I_Price'].'</h4>
+										   <h3><a href="'.$url_s.'page/mainpage/shopping_cart/insert.php?id='.$r['I_ID'].'" style="color:red;font-weight:bold">Add to cart</a></h3>
 			</div>
 			</div>
 			</div>';

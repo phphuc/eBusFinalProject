@@ -37,7 +37,7 @@ include_once $phppath_s."js/js_bottom.php";
 
 <?php
 //echo "<pre>";
-print_r($_SESSION['cart']);
+//print_r($_SESSION['cart']);
 if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
  echo "<form action='update.php' method='post'>";
  echo "<center>";
