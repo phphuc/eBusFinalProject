@@ -3,15 +3,15 @@ include_once "/home/s3568988/public_html/setting/config.php";
 ?>
 
 <?php
-//echo $_GET['id'];
+echo $_GET['id'];
 
-/*$getItemFromDb = mysqli_query($connect5, "SELECT * FROM item");
+$getItemFromDb = mysqli_query($connect5, "SELECT * FROM item");
 if(mysqli_num_rows($getItemFromDb)>0){
  $data = array();
  while($row = mysqli_fetch_assoc($getItemFromDb)){
 	$data[$row['I_ID']] = $row;
  }
-}*/
+}
  $id = $_GET['id'];
  if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
 	$data[$id]['quantity']=1;
