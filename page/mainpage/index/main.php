@@ -14,7 +14,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 						$getCate=mysqli_query($connect5, "select * from type");
 						while ($rowCate=mysqli_fetch_array($getCate)) {
 							$CateId=$rowCate['T_Name'];	
-						echo '<a href="#" class="list-group-item">'.$CateId.'</a>';
+						echo '<a href="'.$url_s.'index.php?type='.$rowCate['T_ID'].'" class="list-group-item">'.$CateId.'</a>';
 						}
 					?>
                     <!--

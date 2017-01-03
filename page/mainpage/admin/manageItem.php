@@ -34,4 +34,3 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
     </tbody>
   </table>
   </div>
-?>
