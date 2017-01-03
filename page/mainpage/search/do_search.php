@@ -8,10 +8,13 @@ include_once "/home/s3568988/public_html/setting/config.php";
             <div class="col-md-3">
                 <p class="lead">Shop Name</p>
                 <div class="list-group">
-                    <a href="#" class="list-group-item">Keyboard</a>
-                    <a href="<?php echo $url_s."page/mainpage/items/cart_template.php"?>" class="list-group-item">Keycap</a>
-                    <a href="#" class="list-group-item">Others</a>
-                    
+                    <?php
+						$getCate=mysqli_query($connect5, "select * from type");
+						while ($rowCate=mysqli_fetch_array($getCate)) {
+							$CateId=$rowCate['T_Name'];	
+						echo '<a href="'.$url_s.'page/mainpage/index/cateItem.php?type='.$rowCate['T_ID'].'" class="list-group-item">'.$CateId.'</a>';
+						}
+					?>
                 </div>
             </div>
             

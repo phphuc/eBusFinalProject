@@ -85,7 +85,7 @@ include_once $phppath_s."js/js_top.php";
 include_once $phppath_s."page/navigation.php";
 ?>
 <h1>Insert new product</h1>
-<form class="col-md-12" id="insertForm" action="<?php echo $url_s."page/mainpage/admin/index.php?insertItem" ?>" method="post">
+<form class="col-md-12" id="insertForm" action="<?php echo $url_s."page/mainpage/admin/index.php?insertItem" ?>" method="post" enctype="multipart/form-data">
 	<div class="form-group">
       <label for="iName">Name:</label>
       <input type="text" class="form-control" id="iName" name="iName" required>
@@ -114,7 +114,7 @@ include_once $phppath_s."page/navigation.php";
       <label for="iDes">Description:</label>
       <textarea class="form-control" rows="5" id="iDes" name="iDes"></textarea>
     </div>
-    <input name="submitItem" type="submit" value="submit new item" />
+    
     <button type="submit" name="submitItem" class="btn btn-default" value="insert_now">Submit</button>
     <button type="reset">Reset</button>
 </form>
@@ -128,13 +128,13 @@ $('#insertForm').submit(function(e){
 });
 </script>
 <?php
-	if(isset($_POST['submitItem'])){
-		echo $_POST['submitItem'];
-		$iImage=$_FILES['iImg']['name'];
-		$iImageTmp=$_FILES['iImg']['tmp_name'];
-		move_uploaded_file($iImageTmp," ".$url_s."page/mainpage/items/img/$iImage");
+	if(isset($_POST["submitItem"])){
+		//echo $_POST["submitItem"];
+		$iImage=$_FILES["iImg"]["name"];
+		$iImageTmp=$_FILES["iImg"]["tmp_name"];
+		move_uploaded_file($iImageTmp,"$phppath_s/page/mainpage/items/img/$iImage");
 	
-		$insertToDB=mysqli_query($connect5, "insert into item ('I_Name','I_Type','I_Img','I_Price','I_Description') values ('".$_POST['iName']."','".$_POST['iType']."','".$_POST['iImg']."','".$_POST['iPrice']."','".$_POST['iDes']."')");
+		$insertToDB=mysqli_query($connect5, "insert into item ('I_Name','I_Type','I_Img','I_Price','I_Description') values ('".$_POST['iName']."','".$_POST['iType']."','$iImage','".$_POST['iPrice']."','".$_POST['iDes']."')");
 		if($insertToDB) {
 			echo "<script>alert('New product has been inserted!')</script>";
 			echo "<script>window.open('mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin/insertItem.php','_self')</script>";

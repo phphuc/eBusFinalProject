@@ -11,7 +11,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 	while ($resultEditItem=mysqli_fetch_array($getEditItem)){
 	echo '
 <h1>Edit product</h1>
-<form class="col-md-12" id="updateForm" action="'.$url_s."page/mainpage/admin/insertItem.php".'" method="post">
+<form class="col-md-12" id="updateForm" action="'.$url_s.'page/mainpage/admin/index.php?editItem='.$_GET['editItem'].'" method="post">
 	<div class="form-group">
       <label for="iName">Name:</label>
       <input type="text" class="form-control" id="iName" name="iName" value="'.$resultEditItem['I_Name'].'">
@@ -56,7 +56,7 @@ $('#updateForm').submit(function(e){
 </script>
 
 <?php
-	if(isset($_POST['updateItem'])){
+	if(isset($_POST["updateItem"])){
 		$iImage=$_FILES['iImg']['name'];
 		$iImageTmp=$FILES['iImg']['tmp_name'];
 		move_uploaded_file($iImageTmp,"".$url_s."page/mainpage/items/img/$iImage");
