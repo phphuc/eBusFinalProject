@@ -28,7 +28,9 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
             </div>
 
        <div class="col-md-9">
-       			<?php if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
+       			<?php 
+				
+				if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
 	echo "<div class='alert alert-danger'>Nothing in cart</div>"; 
 	 }
 	 else{
