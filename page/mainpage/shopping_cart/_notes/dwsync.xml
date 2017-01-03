@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="cart_template.php" server="mekong1.rmit.edu.vn/public_html/" local="131276411698369750" remote="131277593560000000" Dst="0" />
-<file name="index.php" server="mekong1.rmit.edu.vn/public_html/" local="131277638096541347" remote="131278031450000000" Dst="0" />
-<file name="insert.php" server="mekong1.rmit.edu.vn/public_html/" local="131276411696733662" remote="131277593560000000" Dst="0" />
-<file name="list.php" server="mekong1.rmit.edu.vn/public_html/" local="131278448365773130" remote="131278497930000000" Dst="0" />
-<file name="delete.php" server="mekong1.rmit.edu.vn/public_html/" local="131276411698409771" remote="131277593560000000" Dst="0" />
-<file name="update.php" server="mekong1.rmit.edu.vn/public_html/" local="131278031292245514" remote="131278031450000000" Dst="0" />
-<file name="checkout.php" server="mekong1.rmit.edu.vn/public_html/" local="131278515083627027" remote="131278515150000000" Dst="0" />
-<file name="checkoutcontroller.php" server="mekong1.rmit.edu.vn/public_html/" local="131278507897908993" remote="131278513910000000" Dst="0" />
+<file name="cart_template.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004512850930" remote="131279010120000000" Dst="0" />
+<file name="index.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004513390930" remote="131279010120000000" Dst="0" />
+<file name="insert.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004513450930" remote="131279010120000000" Dst="0" />
+<file name="list.php" server="mekong1.rmit.edu.vn/public_html/" local="131279017539613345" remote="131279018200000000" Dst="0" />
+<file name="delete.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004513350930" remote="131279010120000000" Dst="0" />
+<file name="update.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004513880930" remote="131279010120000000" Dst="0" />
+<file name="checkout.php" server="mekong1.rmit.edu.vn/public_html/" local="131279057300035490" remote="131279057380000000" Dst="0" />
+<file name="checkoutcontroller.php" server="mekong1.rmit.edu.vn/public_html/" local="131279010717210930" remote="131279010750000000" Dst="0" />
+<file name="forceToLogin.php" server="mekong1.rmit.edu.vn/public_html/" local="131279053796225612" remote="131279057380000000" Dst="0" />
 </dwsync>
