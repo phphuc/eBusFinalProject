@@ -71,11 +71,8 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
 										<div id="img" style="height:200px;width:auto">
-<<<<<<< Updated upstream
-											<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
-=======
 										<img src="'.$item['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$item['I_ID'].'">
->>>>>>> Stashed changes
+
 										</div>
 										<div class="caption">
 										   <h4>
@@ -109,7 +106,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
       <div class="modal-content">
         	<div class="modal-header">
           			<button type="button" class="close" data-dismiss="modal">&times;</button>
-          			<h4 class="modal-title"><?php echo $item['I_Name'] ?></h4>
+          			<h4 class="modal-title"> echo $item['I_Name'] ?></h4>
         	</div>
        <div class="modal-body">
           	<div style="max-width:600px;max-height:400px;margin: 0 auto;">
@@ -156,20 +153,13 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
           		</div>
           		<div>
           			<p>'.$item['I_Description'].'</p>
-           		</div>
+           	</div>
         	</div>
 		
         	<div class="modal-footer">
           		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         	</div>
-<<<<<<< Updated upstream
-	  </div>
-=======
-		
-      </div>
-	  
-	  
->>>>>>> Stashed changes
+		</div>
     </div>
 </div>
 	 <!--End modal -->';}

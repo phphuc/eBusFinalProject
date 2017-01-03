@@ -42,15 +42,43 @@ if (isset($_POST["search"])) {
 								'<div class="col-sm-4 col-lg-4 col-md-4">
 									<div class="thumbnail" style="width:250px;height:300px">
 										<div id="img" data-toggle="modal" data-target="#showItem" style="height:200px;width:auto">
-										<img src="'.$r['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;">
+										<img src="'.$r['I_Img'].'" alt="" class="img-responsive" style="max-height:200px;vertical-align:middle;display:inline-block;height:100%;" data-toggle="modal" data-target="#showItem'.$r['I_ID'].'">
 										</div>
 										<div class="caption">
-										   <h4 data-toggle="modal" data-target="#showItem"><a href="#">'.$r['I_Name'].'</a></h4>
+										   <h4><a data-toggle="modal" href="#showItem'.$r['I_ID'].'">'.$r['I_Name'].'</a></h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$r['I_Price'].'</h4>
 			</div>
 			</div>
 			</div>';
         };
+		foreach ($result as $r) { echo '
+					<!-- Modal -->
+<div class="modal fade" id="showItem'.$r['I_ID'].'" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        	<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">'.$r['I_Name'].'</h4>
+        	</div>
+			
+       		<div class="modal-body">
+          		<div>
+          			<img class="img-responsive" src="'.$r['I_Img'].'"/>
+          		</div>
+          		<div>
+          			<p>'.$r['I_Description'].'</p>
+           	</div>
+        	</div>
+		
+        	<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        	</div>
+		</div>
+    </div>
+</div>
+	 <!--End modal -->';};
+					
 		
 	} else {
         echo '<p>No results found</p>';

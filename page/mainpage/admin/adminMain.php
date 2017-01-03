@@ -22,7 +22,10 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 			}; 
 			if (isset($_GET['manageItem'])) {
 				include $phppath_s."page/mainpage/admin/manageItem.php";
-			}; 
+			};
+			if (isset($_GET['editItem'])) {
+				include $phppath_s."page/mainpage/admin/editItem.php";
+				}
 			?>
            
         </div>
