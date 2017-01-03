@@ -40,7 +40,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
       <label for="iDes">Description:</label>
       <textarea class="form-control" rows="5" id="iDes" name="iDes">'.$resultEditItem['I_Description'].'</textarea>
     </div>
-    <button type="submit" name="updateItem">Submit</button>
+    <button type="submit" name="updateItem" value="asdf">Submit</button>
     <button type="reset">Reset</button>
 </form>';
 	};
@@ -64,7 +64,7 @@ $('#updateForm').submit(function(e){
 		$insertToDB=mysqli_query($connect5, "update item set I_Name='".$_POST['iName']."',I_Type='".$_POST['iType']."',I_Img='".$_POST['iImg']."',I_Price='".$_POST['iPrice']."',I_Description='".$_POST['iDes']."' where I_ID='".$resultEditItem['I_ID']."'");
 		if($insertToDB) {
 			echo "<script>alert('New product has been inserted!')</script>";
-			echo "<script>window.open('https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin/index.php?insertItem','_self')</script>";
+			echo "<script>window.open('https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin/index.php','_self')</script>";
 			}
 		}
 ?>
