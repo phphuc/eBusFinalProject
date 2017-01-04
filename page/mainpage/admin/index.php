@@ -18,7 +18,15 @@ include_once $phppath_s."js/js_top.php";
 <body>
 <?php
 include_once $phppath_s."page/navigation.php";
-include_once $phppath_s."page/mainpage/admin/adminMain.php";
+if (!isset($_SESSION['admin'])) {
+	header("location:https://mekong1.rmit.edu.vn/~s3568988/index.php");
+} else {
+	if ($_SESSION['admin']==1) {
+	include_once $phppath_s."page/mainpage/admin/adminMain.php";
+	} else {
+		echo '<h1 style="text-align:center">YOU ARE NOT ADMIN</h1>';
+	};
+};
 include_once $phppath_s."page/mainpage/index/footer.php";
 include_once $phppath_s."js/js_bottom.php";
 ?>

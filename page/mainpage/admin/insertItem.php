@@ -115,8 +115,8 @@ include_once $phppath_s."page/navigation.php";
       <textarea class="form-control" rows="5" id="iDes" name="iDes"></textarea>
     </div>
     
-    <button type="submit" name="submitItem" class="btn btn-default" value="insert_now">Submit</button>
-    <button type="reset">Reset</button>
+    <button type="submit" name="submitItem" class="btn btn-success" value="insert_now">Submit</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
 </form>
 <script>
 $('#insertForm').submit(function(e){
@@ -133,9 +133,10 @@ $('#insertForm').submit(function(e){
 		$iImage=$_FILES["iImg"]["name"];
 		$iImageTmp=$_FILES["iImg"]["tmp_name"];
 		move_uploaded_file($iImageTmp,"$phppath_s/page/mainpage/items/img/$iImage");
-	
+		echo $_POST["submitItem"];
 		$insertToDB=mysqli_query($connect5, "insert into item ('I_Name','I_Type','I_Img','I_Price','I_Description') values ('".$_POST['iName']."','".$_POST['iType']."','$iImage','".$_POST['iPrice']."','".$_POST['iDes']."')");
 		if($insertToDB) {
+			echo $_POST['submitItem'];
 			echo "<script>alert('New product has been inserted!')</script>";
 			echo "<script>window.open('mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin/insertItem.php','_self')</script>";
 			} 
