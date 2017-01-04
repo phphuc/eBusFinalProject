@@ -11,8 +11,15 @@ include_once $phppath_s."js/js_top.php";
 
 ?>
 <title>Homepage | <?php echo $title_s?></title>
-<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-  <script>tinymce.init({ selector:'textarea' });</script>
+<script>
+ function confirm_query(){
+	 if(window.confirm('Confirm your action?')){
+		 return true;
+		 } else{
+			 return false;
+			 }
+	 }
+</script>
 </head>
 
 <body>

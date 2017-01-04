@@ -11,7 +11,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 	while ($resultEditItem=mysqli_fetch_array($getEditItem)){
 	echo '
 <h1>Edit product</h1>
-<form class="col-md-12" id="updateForm" action="'.$url_s.'page/mainpage/admin/index.php?editItem='.$_GET['editItem'].'" method="post">
+<form class="col-md-12" id="updateForm" action="'.$url_s.'page/mainpage/admin/index.php?editItem='.$_GET['editItem'].'" method="post" enctype="multipart/form-data">
 	<div class="form-group">
       <label for="iName">Name:</label>
       <input type="text" class="form-control" id="iName" name="iName" value="'.$resultEditItem['I_Name'].'">
@@ -56,15 +56,35 @@ $('#updateForm').submit(function(e){
 </script>
 
 <?php
+
+$target_dir = "$url_s"."page/mainpage/items/img/";
+$target_file = $target_dir . basename($_FILES["iImg"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+
+// Check if file already exists
+if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+
+// Allow certain file formats
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+    echo "Sorry, only JPG, JPEG, PNG files are allowed.";
+    $uploadOk = 0;
+}
+move_uploaded_file($_FILES["iImg"]["tmp_name"], $target_file);
+	
+
 	if(isset($_POST["updateItem"])){
 		$iImage=$_FILES['iImg']['name'];
 		$iImageTmp=$FILES['iImg']['tmp_name'];
 		move_uploaded_file($iImageTmp,"".$url_s."page/mainpage/items/img/$iImage");
 	
-		$insertToDB=mysqli_query($connect5, "update item set I_Name='".$_POST['iName']."',I_Type='".$_POST['iType']."',I_Img='".$_POST['iImg']."',I_Price='".$_POST['iPrice']."',I_Description='".$_POST['iDes']."' where I_ID='".$resultEditItem['I_ID']."'");
+		$insertToDB=mysqli_query($connect5, "update item set I_Name='".$_POST['iName']."',T_ID='".$_POST['iType']."',I_Img='".$target_file."',I_Price='".$_POST['iPrice']."',I_Description='".$_POST['iDes']."' where I_ID='".$resultEditItem['I_ID']."'");
 		if($insertToDB) {
-			echo "<script>alert('New product has been inserted!')</script>";
-			echo "<script>window.open('https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin/index.php','_self')</script>";
+			echo "Product has been updated!";
+			header('refresh:5; url=https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/admin');
 			}
 		}
 ?>

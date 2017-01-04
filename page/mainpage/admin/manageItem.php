@@ -27,7 +27,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
         <td><img src="'.$item['I_Img'].'" width="60" height="60"/></td>
 		 <td>'.$item['I_Price'].'</td>
 		 <td><a href="'.$url_s.'page/mainpage/admin/index.php?editItem='.$item['I_ID'].'">Edit</a></td>
-		 <td><a href="'.$url_s.'page/mainpage/admin/index.php?deleteItem">Delete</a></td>
+		 <td><a href="'.$url_s.'page/mainpage/admin/index.php?deleteItem='.$item['I_ID'].'" onclick="confirm_query()">Delete</a></td>
       </tr>';
 	}; 
 ?>    
