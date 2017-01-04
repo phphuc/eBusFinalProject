@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="cart_template.php" server="mekong1.rmit.edu.vn/public_html/" local="131279768290906676" remote="131279787740000000" Dst="0" />
@@ -10,3 +11,6 @@
 <file name="checkoutcontroller.php" server="mekong1.rmit.edu.vn/public_html/" local="131279815197151331" remote="131279815390000000" Dst="0" />
 <file name="forceToLogin.php" server="mekong1.rmit.edu.vn/public_html/" local="131279053796225612" remote="131279787740000000" Dst="0" />
 </dwsync>
+=======
+<?xml version="1.0" encoding="utf-8" ?><dwsync><file name="cart_template.php" server="mekong1.rmit.edu.vn/public_html/" local="131276411698369750" remote="131279383950000000" Dst="0" /><file name="index.php" server="mekong1.rmit.edu.vn/public_html/" local="131277638096541347" remote="131279377790000000" Dst="0" /><file name="insert.php" server="mekong1.rmit.edu.vn/public_html/" local="131279383888044144" remote="131279384170000000" Dst="0" /><file name="list.php" server="mekong1.rmit.edu.vn/public_html/" local="3566349938" remote="-4611719172008563082" Dst="0" /><file name="delete.php" server="mekong1.rmit.edu.vn/public_html/" local="131276411698409771" remote="131279377790000000" Dst="0" /><file name="update.php" server="mekong1.rmit.edu.vn/public_html/" local="131278031292245514" remote="131279377800000000" Dst="0" /><file name="checkout.php" server="mekong1.rmit.edu.vn/public_html/" local="131279309321783258" remote="131279377790000000" Dst="0" /><file name="checkoutcontroller.php" server="mekong1.rmit.edu.vn/public_html/" local="131279309321943307" remote="131279377790000000" Dst="0" /><file name="forceToLogin.php" server="mekong1.rmit.edu.vn/public_html/" local="131279309322263373" remote="131279377790000000" Dst="0" /></dwsync>
+>>>>>>> origin/master
