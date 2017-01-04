@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" ?><dwsync><file name="adminMain.php" server="mekong1.rmit.edu.vn/public_html/" local="3566363531" remote="-4611719172008549490" Dst="0" /><file name="index.php" server="mekong1.rmit.edu.vn/public_html/" local="3566362985" remote="-4611719172008550038" Dst="0" /><file name="editItem.php" server="mekong1.rmit.edu.vn/public_html/" local="3566362305" remote="-4611719172008550702" Dst="0" /><file name="manageItem.php" server="mekong1.rmit.edu.vn/public_html/" local="3566363577" remote="-4611719172008549441" Dst="0" /><file name="insertItem.php" server="mekong1.rmit.edu.vn/public_html/" local="3566361095" remote="-4611719172008551927" Dst="0" /><file name="insertControl.php" server="mekong1.rmit.edu.vn/public_html/" local="3566362049" remote="-4611719172008550974" Dst="-1" /><file name="deleteItem.php" server="mekong1.rmit.edu.vn/public_html/" local="3566363567" remote="-4611719172008549455" Dst="-1" /></dwsync>
+=======
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="adminMain.php" server="mekong1.rmit.edu.vn/public_html/" local="131279004509110930" remote="131279844690000000" Dst="0" />
+<file name="index.php" server="mekong1.rmit.edu.vn/public_html/" local="131279783007967887" remote="131279844690000000" Dst="0" />
+<file name="editItem.php" server="mekong1.rmit.edu.vn/public_html/" local="131279768289366676" remote="131279844690000000" Dst="0" />
+<file name="manageItem.php" server="mekong1.rmit.edu.vn/public_html/" local="131279099086157765" remote="131279099750000000" Dst="0" />
+<file name="insertItem.php" server="mekong1.rmit.edu.vn/public_html/" local="131279783008037887" remote="131279844690000000" Dst="0" />
+</dwsync>
+>>>>>>> origin/master

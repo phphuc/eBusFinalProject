@@ -59,7 +59,7 @@ include_once "/home/s3568988/public_html/setting/config.php";
     	</div>
         -->
         
-<div id="map" style="width:100%;height:500px"></div>	
+<div id="map" class="col-md-12 col-sm-12 col-xs-12"></div>	
 <script>
 function myMap() {
   var mapCanvas = document.getElementById("map");
@@ -70,9 +70,8 @@ function myMap() {
 }
 </script>
 ​
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-	
-       
-       
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15680.266821147181!2d106.6942863!3d10.7293386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfae94aca5709003f!2sRMIT+University+Vietnam%2C+Saigon+South+Campus!5e0!3m2!1sen!2s!4v1483510807729" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	     
+      
     </div>
 </div>
