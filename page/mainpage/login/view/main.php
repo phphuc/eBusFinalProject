@@ -18,6 +18,11 @@ include_once "/home/s3568988/public_html/setting/config.php";
         <input type="checkbox">
         Remember me</label>
     </div>
+     
     <button type="submit" class="btn btn-success" >Login</button>
+    <div class="">
+      <label>
+        <h4><a href="https://mekong1.rmit.edu.vn/~s3568988/page/mainpage/register/" style="color:black;text-decoration:underline;">Do not have account, register now</a></h4>
+    </div>
   </form>
  </div>
