@@ -3,7 +3,8 @@ include_once "/home/s3568988/public_html/setting/config.php";
 ?>
 
 <?php
-$email = $_POST["email"];
+$email = $_SESSION['email'];
+//echo "$_POST[email]";
 $name = $_POST["Cname"];
 $phone = $_POST["phone"];
 $address = $_POST["address"];
@@ -13,7 +14,7 @@ if (!$updateProfile = mysqli_query($connect5, "INSERT INTO `order` (`email`, `na
 	echo mysqli_error($connect5);	
 }  else {
 echo "You are successfully placed your order<br>";
-header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/page/mainpage/shopping_cart');
+header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/index.php');
 };
 
 

@@ -25,8 +25,6 @@ include_once $phppath_s."page/navigation.php";
 include_once $phppath_s."js/js_bottom.php";
 ?>
 
-
-
 <div class="container">
   <h1>Checkout</h1>
   <form class="col-md-6 col-md-offset-3 col-sm-12 col-lg-4 col-lg-offset-4" action="<?php echo $url_s."page/mainpage/shopping_cart/checkoutcontroller.php"?>" method="post">
@@ -45,7 +43,7 @@ include_once $phppath_s."js/js_bottom.php";
       <input type="text" class="form-control" id="phone" name="phone" value="<?php echo $user["C_Phone_no"] ?>">
     </div>
     <div class="form-group">
-      <label for="address">Address:</label>
+      <label for="address">Shipping Address:</label>
       <input type="text" class="form-control" id="address" name="address" value="<?php echo $user["C_Address"] ?>">
     </div>
     

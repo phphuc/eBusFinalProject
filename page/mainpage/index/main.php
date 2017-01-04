@@ -95,8 +95,8 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 										   <h4>
 										   	<a data-toggle="modal" href="#showItem'.$item['I_ID'].'">'.$item['I_Name'].'</a>
 											</h4>
-										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$item['I_Price'].'</h4>
-										   <h3><a href="'.$url_s.'page/mainpage/shopping_cart/insert.php?id='.$item['I_ID'].'" style="color:red;font-weight:bold">Add to cart</a></h3>
+										   <h4 class="pull-right col-md-5 col-sm-5 col-xs-6">'.number_format($item['I_Price']).'</h4>
+										   <h4><a href="'.$url_s.'page/mainpage/shopping_cart/insert.php?id='.$item['I_ID'].'" style="color:red;font-weight:bold">Add to cart</a></h4>
 										</div>		
 									</div>
 								</div>
