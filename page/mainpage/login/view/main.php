@@ -18,6 +18,6 @@ include_once "/home/s3568988/public_html/setting/config.php";
         <input type="checkbox">
         Remember me</label>
     </div>
-    <button type="submit" class="btn btn-default" >Login</button>
+    <button type="submit" class="btn btn-success" >Login</button>
   </form>
  </div>

@@ -32,7 +32,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
        			<?php 
 				
 				if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
-	echo "<div class='alert alert-danger'>Nothing in cart</div>"; 
+	echo "<div class='alert alert-info'>Nothing in cart</div>"; 
 	 }
 	 else{
 		 $total=0;
@@ -40,7 +40,7 @@ include_once "/home/s3568988/public_html/page/mainpage/index/controller/getItemC
 			 $total += $value['quantity'];
 			 
 			 }
-		echo "<div class='alert alert-danger'>You have: $total item.</div>";	  
+		echo "<div class='alert alert-success'>You have: $total item.</div>";	  
 		 }
 		 ?>
 

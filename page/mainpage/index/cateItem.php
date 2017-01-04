@@ -35,7 +35,7 @@ include_once $phppath_s."page/navigation.php";?>
             
             <div class="col-md-9">
             <?php if(!isset($_SESSION['cart']) or empty($_SESSION['cart'])){
-	echo "<div class='alert alert-danger'>Nothing in cart</div>"; 
+	echo "<div class='alert alert-info'>Nothing in cart</div>"; 
 	 }
 	 else{
 		 $total=0;
@@ -43,7 +43,7 @@ include_once $phppath_s."page/navigation.php";?>
 			 $total += $value['quantity'];
 			 
 			 }
-		echo "<div class='alert alert-danger'>You have: $total item.</div>";	  
+		echo "<div class='alert alert-success'>You have: $total item.</div>";	  
 		 }
 		 ?>
 
@@ -68,6 +68,7 @@ if (mysqli_num_rows($getCateItemFromDb) > 0){
 										<div class="caption">
 										   <h4><a data-toggle="modal" href="#showItem'.$item1['I_ID'].'">'.$item1['I_Name'].'</a></h4>
 										   <h4 class="pull-right col-md-4 col-sm-4 col-xs-6">'.$item1['I_Price'].'</h4>
+										   <h3><a href="'.$url_s.'page/mainpage/shopping_cart/insert.php?id='.$item1['I_ID'].'" style="color:red;font-weight:bold">Add to cart</a></h3>
 			</div>
 			</div>
 			</div>';
