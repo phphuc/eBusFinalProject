@@ -71,8 +71,7 @@ function myMap() {
 </script>
 ​
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15680.266821147181!2d106.6942863!3d10.7293386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfae94aca5709003f!2sRMIT+University+Vietnam%2C+Saigon+South+Campus!5e0!3m2!1sen!2s!4v1483510807729" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-	
-       
-       
+	     
+      
     </div>
 </div>
