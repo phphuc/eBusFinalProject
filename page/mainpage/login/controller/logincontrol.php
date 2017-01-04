@@ -31,16 +31,18 @@ if ($numRowDb == 1){
 	// Get Password o day
 	while ($rowDb = mysqli_fetch_array($checkDb)){
 		$idValid = $rowDb['C_ID'];
-		$passwordValid = $rowDb['C_Password'];	
+		$passwordValid = $rowDb['C_Password'];
+		$isAdmin = $rowDb['C_Admin'];	
 	}
 	// Check Password o day
 	if ($passwordValid == md5($password)){
-		echo "Login Successfully";
-		$_SESSION['id'] = $idValid;
-		$_SESSION['email'] = $email;
-		$_SESSION['password'] = $password;
-		header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/');
-		exit();
+			echo "Login Successfully";
+			$_SESSION['admin']=$isAdmin;
+			$_SESSION['id'] = $idValid;
+			$_SESSION['email'] = $email;
+			$_SESSION['password'] = $password;
+			header('Refresh: 3;url=http://mekong1.rmit.edu.vn/~s3568988/');
+			exit();
 	}
 	echo "Incorrect password";
 	exit();

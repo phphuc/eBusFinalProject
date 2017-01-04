@@ -35,8 +35,9 @@ include_once "/home/s3568988/public_html/setting/config.php";
     <!-- login, sign up -->
     <?php 
 	if (!empty($_SESSION['id'])){
-		echo '<ul class="nav navbar-nav navbar-right">
-        <li><a href="'.$url_s.'page/mainpage/profile/"><span class="glyphicon glyphicon-user"></span> Welcome '.$_SESSION['email'].'!</a></li>
+		echo '<ul class="nav navbar-nav navbar-right">';
+		if ($_SESSION['admin']==1) {echo '<li><a href="'.$url_s.'page/mainpage/admin/"><span class="glyphicon glyphicon-briefcase"></span> ADMIN PANEL </a></li>';};
+        echo '<li><a href="'.$url_s.'page/mainpage/profile/"><span class="glyphicon glyphicon-user"></span> Welcome '.$_SESSION['email'].'!</a></li>
 		<li><a href="'.$url_s.'page/mainpage/login/controller/logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
 		<li><a href="'.$url_s.'page/mainpage/shopping_cart/list.php"><span class="glyphicon glyphicon-shopping-cart"></span>Your Cart</a></li>
       </ul>';
